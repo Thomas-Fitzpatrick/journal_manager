@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Entry</title>
+</head>
+<body>
+
+<div class="d-flex flex-row">
+    <div>
+        <pre>{{ entry }}</pre>
+    </div>
+</div>
+
+<div class="d-flex flex-row justify-content-between">
+    {% for photo in photos %}
+        <div>
+            <img width="100" src="/static/live_files/{{ photo }}">
+        </div>
+    {% endfor %}
+</div>
+
+</body>
+</html>

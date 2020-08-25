@@ -1,0 +1,9 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+{% for year in years %}
+    <a href="{{ url_for('date_index', year=year) }}">{{ year }}</a>
+{% endfor %}
+
+{% endblock %}}}

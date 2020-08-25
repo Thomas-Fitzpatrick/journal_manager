@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<div class="d-flex flex-column justify-content-between">
+{% for date in dates %}
+    <div>
+        <a href="{{ url_for('entry', date=date, year=year) }}">{{ date }}</a>
+    </div>
+{% endfor %}
+</div>
+
+{% endblock %}}}
